@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Świadectwo Alberta</title>
+  <meta name="description" content="Nowa książka: Świadectwo Alberta – opowieść o upadku i przebudzeniu." />
+  <link rel="icon" href="favicon.png" />
+  <style>
+    /* ===== Motyw / zmienne ===== */
+    :root{
+      --bg:#fffaf0;
+      --ink:#222;
+      --muted:#555;
+      --accent:#443;         /* ciepły, stonowany akcent */
+      --accent2:#fef4d1;     /* tło kart */
+      --radius:14px;
+      --shadow:0 8px 22px rgba(0,0,0,.12);
+      --maxw:900px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);}
 
+    /* ===== Nagłówek ===== */
+    header{background:linear-gradient(90deg,#444,#222);color:#fff;padding:32px 18px;text-align:center;text-shadow:2px 2px 4px #0006}
+    header h1{margin:0;font-size:clamp(28px,4.2vw,44px);letter-spacing:.3px;animation:fadeIn 1.2s ease-out both}
+    header p{margin:.35rem 0 0;color:#f1f1f1}
+    .glow{color:#fff;text-shadow:0 0 10px #888,0 0 20px #aaa}
+
+    /* ===== Okładka (łatwa do podmiany) ===== */
+    .cover{max-width:var(--maxw);margin:26px auto 12px auto;padding:0 18px;text-align:center}
+    .cover img{max-width:560px;width:100%;border-radius:12px;box-shadow:var(--shadow);animation:fadeIn 1.2s ease-out}
+    .cover .hint{font-size:.92rem;color:var(--muted);margin-top:10px}
+
+    /* ===== Nawigacja ===== */
+    nav{position:sticky;top:0;z-index:10;background:var(--accent2);display:flex;gap:20px;justify-content:center;align-items:center;padding:10px 12px;border-bottom:1px solid #e9dfc1}
+    nav a{text-decoration:none;color:#333;font-weight:700;padding:8px 14px;border-radius:8px;transition:background .2s}
+    nav a:hover{background:#e9dfc1}
+
+    /* ===== Sekcje ===== */
+    section{max-width:var(--maxw);margin:0 auto;padding:26px 18px}
+    .card{background:var(--accent2);border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,.06);padding:22px}
+    h2{margin:0 0 12px 0;font-size:clamp(22px,3.2vw,30px)}
+
+    /* ===== Baner rozdziału ===== */
+    .chapter-banner{background:var(--accent2);color:#444;font-weight:800;letter-spacing:.3px;text-align:center;border-radius:12px;margin:40px auto 18px auto;padding:14px 12px;box-shadow:0 2px 8px #e0d6be80;max-width:640px}
+
+    /* ===== Typografia ===== */
+    p{line-height:1.72;margin:14px 0}
+    .lead{font-size:1.08rem;color:#3a3328}
+
+    /* ===== Animacje ===== */
+    @keyframes fadeIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="glow">📖 Świadectwo Alberta</h1>
+    <p>Opowieść o upadku, pokusie i łasce, która wciąż czeka.</p>
+  </header>
+
+  <!-- Okładka: podmień plik 'okladka.jpg' w repo albo usuń <img>, jeśli nie chcesz grafiki -->
+  <div class="cover">
+    <img src="okladka.jpg" alt="Okładka książki: Świadectwo Alberta" />
+    <div class="hint">📌 Podmień <code>okladka.jpg</code> na swoją okładkę (ten element możesz też całkiem usunąć).</div>
+  </div>
+
+  <nav>
+    <a href="#rozdzial1">📖 Czytaj</a>
+    <a href="#audiobook">🎧 Audiobook</a>
+    <a href="#kontakt">✉️ Kontakt</a>
+  </nav>
+
+  <!-- (Opcjonalnie) krótkie wprowadzenie w stylistyce poprzedniej strony -->
+  <section id="o-ksiazce">
+    <div class="card">
+      <h2>📄 Przedmowa</h2>
+      <p class="lead">
+        To historia człowieka, który znalazł złoto – i prawie zgubił duszę. 
+        „Świadectwo Alberta” nie jest bajką o szczęściu, ale wezwaniem do przebudzenia. 
+        Jeśli kiedykolwiek uwierzyłeś, że rzeczy są ważniejsze niż serce – ta opowieść jest dla Ciebie.
+      </p>
+    </div>
+  </section>
+
+  <section id="rozdzial1">
+    <div class="chapter-banner">🔹 Rozdział I – Dziedzic</div>
+
+    <p>Albert nie był złym człowiekiem.<br />Był raczej człowiekiem zmęczonym.<br />Zmęczonym sobą, światem, ludźmi, którzy coś od niego chcieli.<br />Leniwy z natury, mówił, że „życie samo się jakoś ułoży”, tylko że życie już dawno przestało się układać.</p>
+
+    <p>Mieszkał w małym pokoju na parterze z oknem wychodzącym na śmietnik.<br />W kuchni zawsze stała pusta butelka po wódce, jak stary znajomy.<br />Czasami ktoś mu ją wynosił, ale kolejnego dnia pojawiała się nowa.</p>
+
+    <p>Pracował kiedyś w warsztacie samochodowym, ale odszedł, bo szef kazał przychodzić punktualnie.<br />„Nie będę niewolnikiem” – powiedział wtedy, odchodząc z wypłatą w kieszeni i dumą, której nie było go stać.</p>
+
+    <p>Z dnia na dzień robił coraz mniej, pił coraz więcej.<br />W końcu nawet sąsiedzi przestali go pozdrawiać.<br />Został sam.</p>
+
+    <p>Pewnego ranka, gdy leżał na tapczanie, spojrzał w sufit i pomyślał, że to chyba koniec.<br />Nie miał już pieniędzy.<br />W portfelu – dwadzieścia złotych i bilet z monopolowego.<br />„Choćby coś drobnego, cokolwiek…” – powiedział półgłosem.</p>
+
+    <p>Zerknął do skrzynki na listy.<br />W środku było kilka ulotek i jedna kartka z ogłoszeniem:</p>
+
+    <p class="card" style="max-width:700px;margin:14px auto;padding:16px 18px"><em>„Szukamy kogoś do sprzątania piwnicy w starej kamienicy przy ulicy Franciszkańskiej. Dniówka płatna od ręki.”</em></p>
+
+    <p>– Piwnica? – mruknął. – No, tego jeszcze nie robiłem…</p>
+
+    <p>Wahał się, ale głód i brak alkoholu okazały się silniejsze od dumy.<br />Włożył kurtkę, w której kiedyś naprawiał samochody, i poszedł.</p>
+
+    <p>Kamienica była stara, szara, z obdrapanymi murami.<br />Nikt tam już nie mieszkał.<br />Właściciel, starszy mężczyzna, powiedział tylko:<br />– Trzeba wynieść wszystko, co zostało po dawnych lokatorach. Zrobimy tam składzik.<br />– A płatne od razu? – zapytał Albert.<br />– Jak skończysz robotę.</p>
+
+    <p>Zszedł po schodach.<br />Piwnica pachniała wilgocią, kurzem i czymś jeszcze – jakimś starym życiem, które dawno się skończyło.<br />Z sufitu zwisały pajęczyny, w kątach słychać było szelest myszy.</p>
+
+    <p>– No pięknie, raj na ziemi – mruknął, chwytając za latarkę.</p>
+
+    <p>Zaczął porządkować skrzynki, stare garnki, kartony z książkami.<br />Z nudów czytał tytuły – modlitewniki, jakieś pamiętniki, nawet stary brewiarz.<br />Kiedyś, wiele lat temu, jego ojciec też miał taki.<br />Ale wtedy Albert przewrócił oczami: „Książki nie karmią, tato”.</p>
+
+    <p>Po kilku godzinach sprzątania zauważył w ścianie dziwną szczelinę.<br />Malutką, jakby coś ją wydrapało.<br />Przyświecił latarką – błysk.<br />Metaliczny, ciepły błysk, który nie pasował do tego miejsca.</p>
+
+    <p>Zaciekawiony, odsunął stare pudło i dotknął cegły.<br />Była luźna.<br />Wyciągnął ją ostrożnie.<br />Za nią – kolejna, i kolejna.</p>
+
+    <p>W środku zobaczył stary metalowy pojemnik zawinięty w płótno.<br />Dłoń zadrżała mu, gdy go wyciągał.<br />Rozwinął materiał.<br />W środku – monety.<br />Ciężkie, złote, z wizerunkami dawnych królów i herbów.</p>
+
+    <p>Przez chwilę patrzył na nie jak zahipnotyzowany.<br />Czuł, jak serce bije mu coraz szybciej.</p>
+
+    <p>– Nie wierzę… – wyszeptał. – To chyba sen…</p>
+
+    <p>Podniósł jedną monetę, przetarł ją w palcach.<br />Była prawdziwa.<br />Złoto. Prawdziwe, stare złoto.</p>
+
+    <p>Rozglądnął się wokół, jakby ktoś mógł go obserwować.<br />Ale nikt nie był tam od lat.<br />W kamienicy panowała cisza, tylko krople wody kapały z rury w kącie.</p>
+
+    <p>– Pewnie należało do Niemców – pomyślał. – Albo do Żydów… przed wojną.<br />Zawahał się.<br />– Oddać? A niby komu? – powiedział półgłosem. – Przecież ja też nic nie mam.</p>
+
+    <p>Schował pojemnik pod kurtkę.<br />Serce waliło mu jak młot.<br />Czuł się, jakby miał właśnie zmienić całe swoje życie.</p>
+
+    <p>Wyszedł z piwnicy, nie oglądając się za siebie.<br />Na ulicy powiał zimny wiatr.<br />Ale w jego środku płonął ogień.<br />Nie wiedział, czy to radość, czy strach.</p>
+
+    <p>W domu otworzył pojemnik jeszcze raz.<br />Liczył monety, układał, przesuwał palcem po wybitych datach.<br />Z każdą minutą czuł się bogatszy – i jednocześnie biedniejszy duchem.<br />„Już nigdy nie będę sprzątał piwnic” – pomyślał.<br />W jego głowie rodziły się obrazy: samochody, domy, restauracje, kobiety.</p>
+
+    <p>Wstał, podszedł do okna. Patrzył na dachy miasta, na ludzi spieszących się gdzieś w deszczu.<br />– No i kto się teraz będzie ze mnie śmiał? – mruknął.<br />Nagle świat wydawał się mały, a on – ogromny.</p>
+
+    <p>Wróciły wspomnienia: dłonie ojca popękane od pracy w fabryce, zupa z resztek, dzieci proszące o nowy zeszyt do szkoły.<br />„Już nigdy więcej biedy”, pomyślał.<br />Nie zauważył, że w tym samym zdaniu zniknęło miejsce na Boga.</p>
+
+    <p>Tego wieczoru siedział długo przy biurku w nowym domu.<br />Otworzył laptop, zaczął przeglądać samochody, domy, zegarki.<br />Kolejne okna, kolejne pragnienia.<br />Każde droższe od poprzedniego.<br />Każde miało w sobie obietnicę, że wreszcie będzie kimś.</p>
+
+    <p>W tym samym czasie, kilometr dalej, jego ojciec klękał przy łóżku.<br />W pokoju pachniało smarem i kurzem z fabryki.<br />„Panie, niech mój syn nie zgubi serca, choć zgubił już sens” – szeptał starzec.</p>
+
+    <p>Albert tymczasem wznosił toast za nowy początek.<br />Szklanka z whisky błyszczała w świetle lampy jak mała perła.<br />Nie wiedział, że to nie była perła życia – lecz lustro, w którym odbijała się jego pycha.</p>
+  </section>
+
+  <section id="audiobook">
+    <h2>🎧 Audiobook</h2>
+    <div class="card" style="text-align:center">
+      <p>Tu wstawisz link do nagrania, gdy będzie gotowe.</p>
+      <!-- Przykład osadzenia YouTube (podmień ID) -->
+      <!--
+      <iframe width="360" height="202" src="https://www.youtube.com/embed/VIDEO_ID" 
+        title="Audiobook Świadectwo Alberta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
+        style="border-radius:12px; box-shadow:0 2px 12px #baa67655"></iframe>
+      -->
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>✉️ Kontakt</h2>
+    <p>Masz pytania lub chcesz zostawić opinię? Napisz: <strong>majster.ed@wp.pl</strong></p>
+  </section>
+
+</body>
+</html>
